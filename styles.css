@@ -1,0 +1,172 @@
+/* Reset de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte global */
+body {
+    font-family: 'Poppins', sans-serif; /* Tipografia moderna */
+    background-color: #f5f5f5;  /* Cor de fundo suave */
+    color: #333;  /* Cor do texto */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container centralizado */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos do Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #1e90ff; /* Cor de destaque */
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Estilos do Menu */
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007BFF;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav.menu ul li a:hover {
+    color: #0056b3;
+}
+
+/* Estilos da Página com Conteúdo */
+.conteudo {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #007BFF;
+}
+
+/* Caixa Estilizada */
+.caixa {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.caixa:hover {
+    transform: translateY(-10px); /* Efeito de movimento ao passar o mouse */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+/* Destaque */
+.destaque {
+    background-color: #e7f3fe;
+    padding: 25px;
+    margin-top: 30px;
+    border-left: 5px solid #1e90ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Link do Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para a Mensagem */
+.mensagem {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mensagem p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Animação de Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .caixa {
+        padding: 20px;
+    }
+
+    .destaque {
+        padding: 20px;
+    }
+
+    nav.menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav.menu ul li a {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
